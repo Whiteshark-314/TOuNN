@@ -19,5 +19,6 @@ Cantilever with point load.
 ```MATLAB
 TOuNN(70, 30, 2, 0.5, true);
 ```
-Will produce the following gif
-![CantileverLarge](https://github.com/Whiteshark-314/TOuNN/assets/CantileverLarge.gif)
+will produce the following gif
+
+![CantileverLarge](https://user-images.githubusercontent.com/54637647/164000610-e0f5cdb6-b57f-4262-8c58-b7d8046fe93c.gif)
