@@ -1,10 +1,11 @@
-function [rho, dlnet, prob] = TOuNN(nelx, nely, nelz, volfrac, displayflag)
+function [rho, dlnet, prob] = TOuNN(nelx, nely, nelz, volfrac, displayflag, filename)
 arguments
     nelx double
     nely double
     nelz double
     volfrac double
     displayflag logical = false
+    filename string = "untitled.gif"
 end
 plots = "training-progress";
 % Problem Setup
@@ -23,7 +24,6 @@ end
 
 init_rho = ones(nely,nelx,nelz);
 if displayflag
-    filename = 'CantileverLarge.gif';
     h = figure(2);
     h.Position = [0, 270, 1280, 720];
     clf
