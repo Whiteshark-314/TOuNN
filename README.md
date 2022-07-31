@@ -16,9 +16,18 @@ There are some changes in this implementation namely:
 
 # Example
 Cantilever with point load.
+
+```MATLAB
+TOuNN(70, 30, 2, 0.5);
+```
+Will display only the final design.
+
 ```MATLAB
 TOuNN(70, 30, 2, 0.5, true);
 ```
-will produce the following gif
+Will produce the following gif but will take lot of time. Not Recommeneded.
+
+For any changes in loads and/or boundary conditions, 
+make appropriate changes in the problem_def.m file before calling the TOuNN function
 
 ![CantileverLarge](https://user-images.githubusercontent.com/54637647/164000610-e0f5cdb6-b57f-4262-8c58-b7d8046fe93c.gif)
